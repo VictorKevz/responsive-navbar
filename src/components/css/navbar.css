@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #31363f;
+    align-items: center;
+    padding: 1rem 3.5rem;
+    position: relative;
+    z-index: 10;
+  }
+  /* Initially hide the toggle icons */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .navbar-links a {
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1.8rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .contact-link {
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3aa6b9;
+  }
+  .icon {
+    width: 5rem;
+    cursor: pointer;
+  
+  }

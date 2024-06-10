@@ -1,0 +1,28 @@
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/images/hero-image-bg.png") no-repeat top / cover;
+    filter: blur(1px); /* Adjust the blur value as needed */
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+  }
+  .item.text {
+    position: relative; /* Ensure the text is above the pseudo-element */
+    max-width: 700px;
+    width: 90%;
+    color: #fff; /* Text color for visibility */
+    z-index: 1; /* Ensure the text is above the pseudo-element */
+  }
